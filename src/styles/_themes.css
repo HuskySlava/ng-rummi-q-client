@@ -1,4 +1,9 @@
 /* Light Theme */
+
+:root {
+	--color-text-btn: #fff;
+}
+
 :root.light-theme {
 	font-family: Roboto, sans-serif;
 
