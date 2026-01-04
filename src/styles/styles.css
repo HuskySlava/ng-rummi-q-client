@@ -1,0 +1,7 @@
+@import './_themes.css';
+
+body {
+	font-family: Roboto, sans-serif;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+}
