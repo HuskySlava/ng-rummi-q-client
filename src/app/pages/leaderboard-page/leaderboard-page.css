@@ -1,0 +1,94 @@
+.leaderboard-page {
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	min-height: 100vh;
+	padding: 3rem 1rem 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: inherit;
+}
+
+.button.back {
+	align-self: flex-start;
+}
+
+.leaderboard-title {
+	font-size: 2.25rem;
+	margin-bottom: 2rem;
+	color: var(--color-primary);
+	font-weight: 600;
+}
+
+.leaderboard-card {
+	background-color: var(--color-card-bg);
+	width: 100%;
+	max-width: 900px;
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+	overflow-x: auto;
+}
+
+.leaderboard-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+	padding: 1rem 1.5rem;
+	text-align: left;
+	font-size: 0.95rem;
+}
+
+.leaderboard-table th {
+	background-color: var(--color-primary);
+	color: var(--color-text-btn);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.leaderboard-table tbody tr {
+	background-color: var(--color-card-bg);
+	transition: background-color 0.2s, transform 0.2s;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.leaderboard-table tbody tr:hover {
+	background-color: rgba(52, 152, 219, 0.1); /* light primary shade hover */
+	transform: translateY(-1px);
+}
+
+.leaderboard-table td:first-child {
+	font-weight: 500;
+	width: 60px;
+}
+
+.leaderboard-table td:last-child {
+	font-weight: 600;
+	text-align: right;
+}
+
+/* Zebra stripes for readability */
+.leaderboard-table tbody tr:nth-child(even) {
+	background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+	.leaderboard-table th,
+	.leaderboard-table td {
+		padding: 0.6rem 1rem;
+		font-size: 0.85rem;
+	}
+
+	.leaderboard-title {
+		font-size: 1.75rem;
+	}
+
+	.button.back {
+		font-size: 0.85rem;
+		padding: 0.4rem 0.8rem;
+	}
+}
