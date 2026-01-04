@@ -1,0 +1,66 @@
+.button {
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+	color: var(--color-text-btn);
+}
+
+.button-primary {
+	background-color: var(--color-primary);
+}
+
+.button-primary:hover {
+	background-color: var(--color-primary-dark);
+}
+
+.button-secondary {
+	background-color: var(--color-secondary);
+}
+
+.button-secondary:hover {
+	background-color: var(--color-secondary-dark);
+}
+
+.button-accent {
+	background-color: var(--color-accent);
+}
+
+.button-accent:hover {
+	background-color: var(--color-accent-dark);
+}
+
+/* Success / Error / Warning / Info Buttons (Optional) */
+.button-success {
+	background-color: var(--color-success);
+}
+
+.button-success:hover {
+	background-color: var(--color-success);
+}
+
+.button-error {
+	background-color: var(--color-error);
+}
+
+.button-error:hover {
+	background-color: var(--color-error);
+}
+
+.button-warning {
+	background-color: var(--color-warning);
+}
+
+.button-warning:hover {
+	background-color: var(--color-warning);
+}
+
+.button-info {
+	background-color: var(--color-info);
+}
+
+.button-info:hover {
+	background-color: var(--color-info);
+}
